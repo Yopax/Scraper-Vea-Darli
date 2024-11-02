@@ -1,0 +1,17 @@
+{
+    "name": "Scraper Vea 2",
+    "version": "0.1.0",
+    "repository": "https://github.com/Yopax/Scraper-Vea-Darli",
+    "author": "darlibarreto",
+    "license": "MIT",
+    "devDependencies": {
+        "copy-webpack-plugin": "^12.0.2",
+        "webpack": "^5.96.1",
+        "webpack-cli": "^5.1.4",
+        "webpack-merge": "^6.0.1"
+    },
+    "scripts": {
+    "build": "webpack --config webpack.prod.js",
+    "start": "webpack --watch --config webpack.dev.js"
+  }
+}
