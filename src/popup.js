@@ -6,8 +6,6 @@ document.getElementById("scrapeButton").addEventListener("click", async () => {
   output.innerHTML = "";
 
   const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
-
-  // Ejecuta el script en la página activa con un delay
   chrome.scripting.executeScript(
     {
       target: { tabId: tab.id },
